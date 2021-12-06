@@ -9,7 +9,7 @@ class Conexao
   {
     $opcoes = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
     try {
-      $this->con = new PDO("mysql:host=192.168.56.102;dbname=golivros", "root", "", $opcoes);
+      $this->con = new PDO("mysql:host=localhost;dbname=golivros", "root", "", $opcoes);
     } catch (PDOException $erro) {
       echo $erro->getMessage();
     }
